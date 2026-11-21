@@ -1,0 +1,52 @@
+{
+  "harness_controls": [
+    "validate_input",
+    "blind",
+    "refuse",
+    "log",
+    "escalate"
+  ],
+  "format_problems": [],
+  "entries": [
+    {
+      "control": "validate_input",
+      "principle": "Safety and security",
+      "principle_source": "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021) §27 https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "instrument": "Law of the Republic of Kazakhstan On Artificial Intelligence, 17 November 2025, No. 230-VIII",
+      "provision": "Art. 8(1) https://old.adilet.zan.kz/eng/docs/Z2500000230/compare",
+      "why_here": "Clean inputs gave 400 baseline outcomes. Range validation protects against a different risk, impossible values changing the decision."
+    },
+    {
+      "control": "blind",
+      "principle": "Fairness and non-discrimination",
+      "principle_source": "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021) §28 https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "instrument": "Law of the Republic of Kazakhstan On Artificial Intelligence, 17 November 2025, No. 230-VIII",
+      "provision": "Article 6, fairness and equality. https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "why_here": "Before blinding, name language flipped 2/40, gender-coded names 4/40, and university 1/40. The field policy blocks direct effects regardless of how clearly each rate clears its floor."
+    },
+    {
+      "control": "refuse",
+      "principle": "Right to privacy and data protection",
+      "principle_source": "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021) §§32–34 https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "instrument": "Law of the Republic of Kazakhstan On Personal Data and Their Protection, 21 May 2013, No. 94-V",
+      "provision": "Article 7(1), consent to processing, subject to the stated exceptions. https://old.adilet.zan.kz/rus/docs/Z1300000094/compare/eng",
+      "why_here": "The bare pipeline called the model for all 6 test requests. Refusal checks enforce scope, consent and safe form data before inference."
+    },
+    {
+      "control": "log",
+      "principle": "Responsibility and accountability",
+      "principle_source": "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021) §§42–43 https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "instrument": "Law of the Republic of Kazakhstan On Artificial Intelligence, 17 November 2025, No. 230-VIII",
+      "provision": "Articles 7(2) and 8(1), notice, objections and continuous control. https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "why_here": "The baseline logged no screening events. The harness has a trace for each of the 400 clean requests and 6 test requests."
+    },
+    {
+      "control": "escalate",
+      "principle": "Human oversight and determination",
+      "principle_source": "UNESCO Recommendation on the Ethics of Artificial Intelligence (2021) §§35–36 https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence",
+      "instrument": "Law of the Republic of Kazakhstan On Artificial Intelligence, 17 November 2025, No. 230-VIII",
+      "provision": "Articles 7(2) and 8(1), objections and continuous control. https://old.adilet.zan.kz/rus/docs/Z2500000230",
+      "why_here": "The baseline converted 0 parse failures into rejections. The final harness routed 98 uncertain results for human review."
+    }
+  ]
+}
