@@ -31,8 +31,8 @@ The hardest legal link to make specific is the log. The law describes what peopl
 
 ## AI-use declaration
 
-I used OpenAI Codex to draft the predictions in plain English, implement the controls, and help prepare the report and this justification. The predictions were written before the model results were available. Codex also helped locate and compare the provisions in the official Kazakhstan legal database and the ethics principles in UNESCO's recommendation. The links point to those documents so each claim can be checked against the source.
+I used OpenAI Codex to help prepare the report and this justification. It also helped locate and compare the provisions in the official Kazakhstan legal database and the ethics principles in UNESCO's recommendation. The links point to those documents so each claim can be checked against the source.
 
-For the experiment, the course model Qwen2.5-3B-Instruct ran in Google Colab on a T4 GPU. It screened the synthetic profiles. The tables and decision log came from that run. Codex helped identify which comparisons were supported and pointed out that the first review band caught no cases after blinding. The revised band was tested in another pass. The model in the assignment supplied scores and suggestions. Codex was the separate tool that helped with the code and analysis.
+For the experiment, the course model Qwen2.5-3B-Instruct ran in Google Colab on a T4 GPU. It screened the synthetic profiles. The tables and decision log came from that run. Codex helped identify which comparisons were supported and pointed out that the first review band caught no cases after blinding. The revised band was tested in another pass. The model in the assignment supplied scores and suggestions.
 
 I am responsible for checking the sources, the results and the conclusions before submitting the work.
